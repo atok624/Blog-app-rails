@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#table-of-contents)
-- [📖 \[Rails-blog\] ](#about-project)
+- [📖 \[Blog-rails-app\] ](#about-project)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -20,7 +20,7 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 Rails Blog <a name="about-project"></a>
+# 📖 Blog Rails App <a name="about-project"></a>
 
 A blog application developed using rails
 
