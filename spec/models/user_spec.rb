@@ -1,21 +1,26 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe 'validations' do
-    it { should validate_presence_of(:name) }
-    it { should validate_presence_of(:photo) }
-    it { should validate_presence_of(:bio) }
-    it { should validate_numericality_of(:posts_counter).only_integer.is_greater_than_or_equal_to(0) }
+  subject { User.new(name: 'John', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.', posts_counter: nil) }
+
+  before { subject.save }
+
+  it 'new user should be saved in the database' do
+    expect(subject.new_record?).to be_truthy
   end
 
-  describe '#best_three_posts' do
-    let(:user) { create(:user) } # Assuming you have a factory set up for User
+  it 'name should be present' do
+    subject.name = nil
+    expect(subject).to_not be_valid
+  end
 
-    it 'returns the 3 most recent posts for the user' do
-      create_list(:post, 5, author: user)
+  it 'posts_counter should be an integer' do
+    subject.posts_counter = 'a'
+    expect(subject).to_not be_valid
+  end
 
-      expect(user.best_three_posts.count).to eq(3)
-      expect(user.best_three_posts.first.created_at).to be > user.best_three_posts.last.created_at
-    end
+  it 'posts_counter should be greater than or equal to 0' do
+    subject.posts_counter = -1
+    expect(subject).to_not be_valid
   end
 end

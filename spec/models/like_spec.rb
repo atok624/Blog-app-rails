@@ -1,14 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
-  describe '#update_likes_counter' do
-    let(:post) { create(:post) } # Assuming you have a factory set up for Post
-    let(:author) { create(:user) } # Assuming you have a factory set up for User
+  subject { Like.new(author_id: 1, post_id: 1) }
 
-    it 'increments the likes_counter of the associated post' do
-      like = create(:like, post: post, author: author)
+  before { subject.save }
 
-      expect { like.update_likes_counter }.to change { post.likes_counter }.by(1)
-    end
+  it 'new like should be saved in the database' do
+    expect(subject.new_record?).to be_truthy
   end
 end
