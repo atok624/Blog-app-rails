@@ -103,7 +103,6 @@ body {
     margin: 0 10px;
   }
 
-  /* Linter Request: KEEP AT THE END */
   .userNameAnchor > h6 {
     align-self: flex-end;
   }
