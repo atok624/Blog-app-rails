@@ -56,6 +56,7 @@ A blog application developed using rails
 - **List all of Comments for a post**
 - **List all of likes for a post**
 - **Views**
+- **Forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
