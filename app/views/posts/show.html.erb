@@ -1,8 +1,8 @@
 <div class="wrapper">
   <div class="post">
     <div class="postHeader">
-      <h2>Post #<%= @user.post.index(@post) + 1 %> by <%= @user.name %></h2>
-      <h6>Comments: <%= @post.comment.count %>,&nbsp;Likes: <%= @post.like.count %></h6>
+      <h2>Post #<%= @user.posts.index(@post) + 1 %> by <%= @user.name %></h2>
+      <h6>Comments: <%= @post.comments.count %>,&nbsp;Likes: <%= @post.likes.count %></h6>
     </div>
     <div class='buttons'>
         <button class='create-comment-btn'>
