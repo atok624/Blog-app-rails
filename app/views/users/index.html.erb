@@ -2,7 +2,7 @@
   <ul>
     <% @users.each do |user| %>
       <li class="userNameWrapper">
-          <div><img alt="Profile P."/></div>
+          <div><img alt="Profile P." src="<%= user.photo %>"/></div>
 
             <div class="userName">
           <%= link_to user_path(user), class: 'userNameAnchor' do %>

@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   def show
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
-    @comments = @post.comments
+    @comments = Comment.includes(:post)
   end
 
   def create
@@ -15,9 +15,10 @@ class PostsController < ApplicationController
 
     if @post.save
       redirect_to user_posts_path(current_user)
+
     else
       flash[:alert] = 'Something went wrong'
-      render :new
+      render 'new'
     end
   end
 
