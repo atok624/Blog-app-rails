@@ -138,7 +138,7 @@ You can deploy this project using: **Not available**
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [https://github.com/atok624/Blog-app-rails.git]
+Feel free to check the [https://github.com/atok624/Blog-app-rails/issues]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

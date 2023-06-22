@@ -27,7 +27,7 @@ class PostsController < ApplicationController
   end
 
   def include_user
-    @user = User.includes(:posts, posts: [:comments, { comments: [:author] }]).find(params[:user_id])
+    @posts = @user.posts.includes(:comments)
   end
 
   private
