@@ -5,7 +5,7 @@ require 'capybara/rspec'
 RSpec.feature 'User index page' do
   let(:user) { FactoryBot.create(:user) }
   let(:postClick) { FactoryBot.create(:post, text: 'Click me', title: 'First post', author: user) }
-  let!(:posts) { FactoryBot.create_list(:post, 1, author: user,) }
+  let!(:posts) { FactoryBot.create_list(:post, 1, author: user) }
 
   it 'displays the correct information' do
     visit user_posts_path(user)
