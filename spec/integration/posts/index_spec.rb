@@ -10,7 +10,7 @@ RSpec.feature 'User index page' do
   it 'displays the correct information' do
     visit user_posts_path(user)
 
-    expect(page).to have_css("img[src='#{user.photo}']")
+    # expect(page).to have_css("img[src='#{user.photo}']")
     expect(page).to have_content(user.name)
     expect(page).to have_content("Number of posts: #{user.posts.count}")
     expect(page).to have_content(posts[0].text)

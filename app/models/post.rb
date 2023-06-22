@@ -8,7 +8,7 @@ class Post < ApplicationRecord
   validates :title, presence: true, length: { maximum: 250 }
 
   def top_5_comments
-    comments.order(created_at: :desc).limit(5)
+    comments.includes(:author).order(created_at: :desc).limit(5)
   end
 
   private
@@ -17,4 +17,3 @@ class Post < ApplicationRecord
     author.increment!(:posts_counter)
   end
 end
-## end of file ##
