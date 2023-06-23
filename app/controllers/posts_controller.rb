@@ -33,8 +33,9 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post.destroy
+    @post.comments.destroy_all
     @post.likes.destroy_all
+    @post.destroy
     redirect_to user_posts_path(@user)
   end
 
