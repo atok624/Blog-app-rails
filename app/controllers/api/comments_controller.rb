@@ -6,6 +6,7 @@ module Api
       @comments = Comment.where(post: @post)
       render json: @comments
     end
+
     def create
       @comment = Comment.new(comment_params)
       if @comment.save
@@ -15,7 +16,9 @@ module Api
       end
       render json: :head
     end
+
     private
+
     def comment_params
       params.require(:comment).permit(:author_id, :post_id, :text)
     end
