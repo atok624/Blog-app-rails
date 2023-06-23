@@ -57,6 +57,8 @@ A blog application developed using rails
 - **List all of likes for a post**
 - **Views**
 - **Forms**
+- **Devise**
+- **Authorisation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

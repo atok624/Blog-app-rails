@@ -9,10 +9,6 @@
           <%= link_to 'Add New Comment', new_user_post_comment_path(@user, @post)%>
         </button>
 
-        <div class="btn-container">
-          <%= link_to "Create post", new_user_post_path(@user) %>
-        </div>
-
         <div>
           <%= form_with model: Like, url: user_post_likes_path(@post.author, @post) do |form| %>
             <%= form.submit 'Like Post', class: 'like-btn' %>
@@ -27,10 +23,19 @@
     <div class="comments">
       <ul>
         <% @comments.each do |comment|%>
-            <li><%= comment.author.name %>: <%= comment.text %></li>
+           <li>
+            <%= comment.author.name %>: <%= comment.text %>
+              <% if can? :destroy, comment %>
+                <%= button_to 'DELETE Comment', user_post_comment_path(@user, @post, comment), method: :delete %>
+              <% end %>
+            </li>
         <% end %>
       </ul>
     </div>
+  <% end %>
+
+  <% if can? :destroy,  @post %>
+    <%= button_to 'DELETE Post', user_post_path(@user, @post), method: :delete %>
   <% end %>
 
 </div>
