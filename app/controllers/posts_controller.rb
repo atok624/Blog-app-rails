@@ -6,6 +6,11 @@ class PostsController < ApplicationController
     @posts = @user.posts
   end
 
+  respond_to do |format|
+    format.html
+    format.json { render json: @posts }
+  end
+
   def show
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
