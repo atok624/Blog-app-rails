@@ -1,7 +1,9 @@
 body {
   background-color: white;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .wrapper {
@@ -58,7 +60,7 @@ ul {
 }
 
 button {
-  width: 150px;
+  width: 100%;
   background-color: transparent;
   cursor: pointer;
   box-shadow: 5px 5px black;
@@ -111,4 +113,94 @@ h6 {
 .userNameWrapper > div h2,
 .userNameWrapper > div h6 {
   margin: 0 10px;
+}
+
+/* --------------------------------Sign up form----------------------- */
+.form_wrapper {
+  height: 50vh;
+}
+
+.form_title {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  height: 50vh;
+}
+
+/* Style the form fields */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1px;
+  width: 100%;
+  width: 500px;
+}
+
+.field label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #3e8e41 solid 1px;
+}
+
+.field input,
+.field textarea {
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.field textarea {
+  height: 100px;
+}
+
+/* Style the file input */
+.field input[type="file"] {
+  height: auto;
+  padding: 0;
+  border: none;
+}
+
+/* Style the submit button */
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.actions input[type="submit"] {
+  background-color: #4caf50;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.links {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.center {
+  margin-top: 50px;
 }
