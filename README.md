@@ -107,13 +107,19 @@ You can deploy this project using: **Not available**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-## 👤Nicholas Kwamena Amissah <a name="authors"></a>
+👤 **Nicholas Kwamena Amissah** <a name="authors"></a>
 
 - GitHub: [Nicholas Amissah](https://github.com/atok624)
 - Twitter: [Nicholas Amissah](https://twitter.com/MysticalAmissah)
 - LinkedIn: [Nicholas Amissah](https://www.linkedin.com/in/nicholas-amissah-153b09154)
+
+👤 **Abel Seifu**
+
+- GitHub: [GitHub](https://github.com/Abe1able)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abel-seifu/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +138,7 @@ You can deploy this project using: **Not available**
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [https://github.com/atok624/Blog-app-rails.git]
+Feel free to check the [https://github.com/atok624/Blog-app-rails/issues]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
