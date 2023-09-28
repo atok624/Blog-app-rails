@@ -99,7 +99,7 @@ Clone this repository to your desired folder:
 
 ### Usage
 
-**To run the project follow the following instruction:-**
+**To run the project follow the following instructions:-**
 
 - Run **rails server**
 
