@@ -70,7 +70,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need ruby, rails and postgres installed:
+In order to run this project you need ruby, rails and Postgres installed:
 
 On Linux:
 
