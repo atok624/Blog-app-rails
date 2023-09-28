@@ -66,11 +66,11 @@ A blog application developed using rails
 
 To get a local copy up and running, follow these steps.
 
-> clone this repo: https://github.com/atok624/Blog-app-rails.git
+> Clone this repo: https://github.com/atok624/Blog-app-rails.git
 
 ### Prerequisites
 
-In order to run this project you need ruby, rails and Postgres installed:
+In order to run this project you need Ruby, rails, and Postgres installed:
 
 On Linux:
 
@@ -80,7 +80,7 @@ On Linux:
 
 On Windows
 
-Go to [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about) to set up wsl for ubuntu
+Go to [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about) to set up WSL for Ubuntu
 
 ### Setup
 
